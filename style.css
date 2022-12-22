@@ -20,45 +20,93 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(133, 133, 133, 0.2), 0 6px 20px 0 rgba(135, 135, 135, 0.19);
     margin: auto;
-    padding: 20px  60px;
-   
-
+    padding: 20px 60px;
 }
 
 .dropdown {
     margin: 0px 140px;
-    margin-bottom: 40px;
     
 }
+.year-dropdown{
+    
+    margin-bottom: 40px;
+    position: relative;
+}
+.month-dropdown{
+    margin-bottom: 40px;
+    position: relative;
+}
+.month-dropdown:hover .months {
+    display: block;
+  } 
 
-.dropdown button{
+ .year-dropdown:hover .year {
+    display: block;
+  } 
+p {
+    width: 150px;
+    padding: 11px;
+}
+
+p:hover {
+    background-color: rgb(255, 81, 0);
+    color: white;
+    cursor: pointer;
+    width: 147px;
+}
+
+.dropdown button {
     width: 170px;
     height: 65px;
     font-size: 22px;
     font-weight: 600;
-
+    margin-right: 10px;
+}
+#month-style{
+color:rgb(255, 81, 0) ;
 }
 
 .month-dropdown {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background: rgba(242, 242, 242, 0.69);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(231, 231, 231, 0.3);
-    color: rgb(255, 81, 0);
+    /* color: rgb(255, 81, 0); */
 }
 
 .year-dropdown {
-    border: 0px ;
+    border: 0px;
     background-color: rgb(251, 251, 251);
 }
-.year-dropdown:hover{
+
+.year-dropdown:hover {
     cursor: pointer;
+    
 }
 
-.month-dropdown:hover{
-cursor: pointer;
+.month-dropdown:hover {
+    cursor: pointer;
+  
 }
+
+.months,
+.year {
+    font-size: 18px;
+    font-weight: 300;
+    border: 1px solid rgba(203, 200, 200, 0.69);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 168px;
+    margin-top: 15px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
 .days-of-the-week {
     display: flex;
     justify-content: space-between;
@@ -66,20 +114,23 @@ cursor: pointer;
     font-weight: 600;
     width: 620px;
 }
-.full-date{
+
+.full-date {
     font-size: 25px;
-    padding: 30px 30%;
+    padding: 30px;
+    padding-left: 200px;
     font-weight: 600;
 }
+
 .days-of-the-month {
-font-size: 21px;
-font-weight:5px;
-padding-top: 35px;
-width: 690px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
+    font-size: 21px;
+    font-weight: 5px;
+    padding-top: 35px;
+    width: 690px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .days-of-the-month div {
@@ -88,15 +139,15 @@ justify-content: space-between;
     height: 75px;
     display: flex;
     justify-content: space-between;
-   
 }
-  .days-of-the-month div:hover {
+
+.days-of-the-month div:hover {
     cursor: pointer;
-   /* width: 60px;
+    /* width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: rgb(255, 81, 0);*/
-}  
+}
 
 .control-buttons button {
     width: 180px;
@@ -104,20 +155,29 @@ justify-content: space-between;
     font-size: 20px;
     font-weight: 450;
     border-radius: 10px;
-   
 }
-.control-buttons{
+
+.control-buttons {
     margin-left: 140px;
 }
-.cancel{
+
+.cancel-button:hover {
+    cursor: pointer;
+}
+
+.set-date-button:hover {
+    cursor: pointer;
+}
+
+.cancel-button {
     background: rgba(242, 242, 242, 0.69);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(231, 231, 231, 0.3);
     margin-right: 10px;
-
 }
-.set-date{
+
+.set-date-button {
     background-color: rgb(255, 81, 0);
     border: 1px solid rgb(255, 81, 0);
     color: rgb(255, 226, 200);

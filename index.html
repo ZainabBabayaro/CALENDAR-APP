@@ -10,18 +10,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="main-container">
         <div class="full-date">
-            <p>Fri 29 August, 2022</p>
+            <div>Fri 29 August, 2022</div>
         </div>
         <div class="dropdown">
-            <button class="month-dropdown">Month <i class="fa fa-angle-down"></i> </button>
-            <button class="year-dropdown">Year <i class="fa fa-angle-down"></i> </button>
+            <button class="month-dropdown"> <span id="month-style"> Month <i class="fa fa-angle-down"></i> </span> 
+            <div class="months">
+                <p>January</p>
+                <p>February</p>
+                <p>March</p>
+                <p>April</p>
+                <p>May</p>
+                <p>June</p>
+                <p>July</p>
+                <p>August</p>
+                <p>September</p>
+                <p>October</p>
+                <p>November</p>
+                <p>December</p>
+            </div>
+        </button>
+            <button class="year-dropdown">Year <i class="fa fa-angle-down"></i> 
+                <div class="year">
+                    <p>2020</p>
+                    <p>2021</p>
+                    <p>2022</p>
+                    <p>2023</p>
+                    <p>2024</p>
+                    <p>2025</p>
+                    <p>2026</p>
+                    <p>2027</p>
+                    <p>2028</p>
+                    <p>2029</p>
+                    <p>2030</p>
+                    <p>2031</p>
+                </div>
+            </button>
+            
         </div>
         <div class="dates-and-days">
             <div class="days-of-the-week">
@@ -74,15 +107,15 @@
                 <div>30</div>
                 <div>31</div>
                 <div class="next-month-date">1</div>
-              
+
 
 
 
             </div>
         </div>
         <div class="control-buttons">
-            <button class="cancel">Cancel</button>
-            <button class="set-date"> Set Date</button>
+            <button class="cancel-button">Cancel</button>
+            <button class="set-date-button"> Set Date</button>
         </div>
     </div>
 
