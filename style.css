@@ -10,39 +10,64 @@ body {
     background-color: rgb(227, 227, 227);
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+img {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-container {
     background-color: rgb(251, 251, 251);
     width: 650px;
-    height: 730px;
+    height: 760px;
     border: 1px solid rgb(204, 201, 201);
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(133, 133, 133, 0.2), 0 6px 20px 0 rgba(135, 135, 135, 0.19);
     margin: auto;
     padding: 20px 60px;
+
 }
 
 .dropdown {
     margin: 0px 140px;
-    
+
 }
-.year-dropdown{
-    
-    margin-bottom: 40px;
+
+.year-dropdown {
+
+    margin-bottom: 25px;
     position: relative;
 }
-.month-dropdown{
-    margin-bottom: 40px;
+
+.month-dropdown {
+    margin-bottom: 25px;
     position: relative;
+
 }
+
+
 .month-dropdown:hover .months {
     display: block;
-  } 
+    text-align: left;
 
- .year-dropdown:hover .year {
+}
+
+.year-dropdown:hover .year {
     display: block;
-  } 
+
+}
+
 p {
     width: 150px;
     padding: 11px;
@@ -62,8 +87,9 @@ p:hover {
     font-weight: 600;
     margin-right: 10px;
 }
-#month-style{
-color:rgb(255, 81, 0) ;
+
+#month-style {
+    color: rgb(255, 81, 0);
 }
 
 .month-dropdown {
@@ -83,12 +109,12 @@ color:rgb(255, 81, 0) ;
 
 .year-dropdown:hover {
     cursor: pointer;
-    
+
 }
 
 .month-dropdown:hover {
     cursor: pointer;
-  
+
 }
 
 .months,
@@ -117,8 +143,8 @@ color:rgb(255, 81, 0) ;
 
 .full-date {
     font-size: 25px;
-    padding: 30px;
-    padding-left: 200px;
+    padding: 15px 30px;
+    padding-left: 100px;
     font-weight: 600;
 }
 
@@ -131,22 +157,25 @@ color:rgb(255, 81, 0) ;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: -30px;
+
 }
 
 .days-of-the-month div {
     width: 85px;
     margin: 5px;
-    height: 75px;
+    height: 85px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .days-of-the-month div:hover {
     cursor: pointer;
-    /* width: 60px;
-    height: 60px;
     border-radius: 50%;
-    background-color: rgb(255, 81, 0);*/
+    background-color: rgb(255, 81, 0);
+    color: rgb(255, 226, 200);
 }
 
 .control-buttons button {
@@ -181,4 +210,21 @@ color:rgb(255, 81, 0) ;
     background-color: rgb(255, 81, 0);
     border: 1px solid rgb(255, 81, 0);
     color: rgb(255, 226, 200);
+}
+
+.other-month:nth-child(1) {
+    color: rgb(172, 170, 170);
+
+}
+
+.other-month:nth-child(2) {
+    color: rgb(172, 170, 170);
+}
+
+.other-month:nth-child(3) {
+    color: rgb(172, 170, 170);
+}
+
+.other-month:last-child {
+    color: rgb(172, 170, 170);
 }
