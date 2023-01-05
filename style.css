@@ -105,6 +105,7 @@ p:hover {
 .year-dropdown {
     border: 0px;
     background-color: rgb(251, 251, 251);
+    color: rgb(255, 81, 0);
 }
 
 .year-dropdown:hover {
@@ -130,7 +131,7 @@ p:hover {
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
+    color: black;
 }
 
 .days-of-the-week {
@@ -144,7 +145,7 @@ p:hover {
 .full-date {
     font-size: 25px;
     padding: 15px 30px;
-    padding-left: 100px;
+    padding-left: 200px;
     font-weight: 600;
 }
 

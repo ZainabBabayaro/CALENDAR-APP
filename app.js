@@ -7,6 +7,7 @@ const setDate = document.querySelector('.set-date-button')
 let cancel = document.querySelector('.cancel-button')
 
 
+
 let selectedDay = ''
 let selectedMonth = ''
 let selectedYear = ''
@@ -37,16 +38,20 @@ function myDayDisplay(selectDay) {
 
 setDate.addEventListener("click", selectedDate);
 function selectedDate() {
-    fullDate.innerHTML = `<div class="full-date"> ${selectedMonth} ${selectedDay}, ${selectedYear} </div>`
+
+    fullDate.innerHTML = `<div class="full"> ${selectedMonth} ${selectedDay}, ${selectedYear} </div>`
 }
 
 
- 
+
 
 cancel.addEventListener("click", cancelDate);
 function cancelDate() {
-cancel = fullDate.remove()
-  }
-//   function removeEvent(){
-//     cancel.removeEventListener("click", cancelDate);
-//    }
+    let full = document.querySelector('.full')
+    selectedDay = ''
+    selectedMonth = ''
+    selectedYear = ''
+     full.remove()
+
+}
+
